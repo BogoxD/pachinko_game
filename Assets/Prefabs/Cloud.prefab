@@ -98,4 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
+  loopPosition: 0
+  loopTime: 1
   destroyTime: 35
+  destroyObjectInTime: 1

@@ -9,7 +9,7 @@ public class ActionTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Ball"))
+        if (collision.CompareTag("Ball"))
         {
             if (gameObject.CompareTag("Move"))
                 player.MoveForward();
@@ -17,6 +17,7 @@ public class ActionTrigger : MonoBehaviour
                 player.Shoot();
 
             ballSpawn.ResetBallPoisiton();
+            ballSpawn.GetComponentInChildren<Ball>().SetRigidBodyKinematic();
         }
     }
 }

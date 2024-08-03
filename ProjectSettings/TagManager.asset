@@ -8,6 +8,7 @@ TagManager:
   - Move
   - Shoot
   - Ball
+  - Enemy
   layers:
   - Default
   - TransparentFX

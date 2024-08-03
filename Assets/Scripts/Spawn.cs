@@ -17,6 +17,7 @@ public class Spawn : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.R))
         {
             ResetBallPoisiton();
+            GetComponentInChildren<Ball>().SetRigidBodyKinematic();
         }
     }
     public void ResetBallPoisiton()
